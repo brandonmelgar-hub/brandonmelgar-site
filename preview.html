@@ -42,17 +42,18 @@ h2.d em{text-transform:lowercase}
 footer{border-top:1px solid var(--line);padding:60px 44px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;text-align:center}
 footer a{color:var(--ink);text-decoration:none;margin:0 12px}
 footer a:hover{color:var(--bronze)}
-.revhead{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-bottom:44px}
-.badge{display:flex;align-items:center;gap:14px;border:1px solid var(--line);padding:16px 22px;text-decoration:none;color:var(--ink)}
+.revhead{display:flex;align-items:flex-end;justify-content:space-between;gap:34px;flex-wrap:wrap;margin-bottom:52px}
+.badge{display:flex;align-items:center;gap:20px;border:1px solid var(--line);padding:20px 28px;text-decoration:none;color:var(--ink);transition:.18s}
 .badge:hover{border-color:var(--bronze)}
-.badge .num{font-family:"Bodoni Moda",Didot,Georgia,serif;font-size:30px;line-height:1}
-.stars{color:var(--bronze);font-size:14px;letter-spacing:3px;line-height:1}
-.badge .lab{font-size:10px;letter-spacing:.16em;text-transform:uppercase;margin-top:5px}
-.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
-.rev{border-top:1px solid var(--line);padding-top:22px}
-.rev p{font-size:15.5px;line-height:1.7;margin:0 0 18px}
-.rev .who{font-size:11px;letter-spacing:.14em;text-transform:uppercase}
-.rev .when{display:block;color:var(--bronze);margin-top:5px;letter-spacing:.1em}
+.badge .num{font-family:"Bodoni Moda",Didot,Georgia,serif;font-size:38px;line-height:.9}
+.badge .meta{display:flex;flex-direction:column;gap:7px}
+.stars{color:var(--bronze);font-size:13px;letter-spacing:4px;line-height:1}
+.badge .lab{font-size:9.5px;letter-spacing:.17em;text-transform:uppercase;line-height:1;color:#4A443C}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:34px;align-items:stretch}
+.rev{border-top:1px solid var(--line);padding-top:24px;display:flex;flex-direction:column}
+.rev p{font-size:15.5px;line-height:1.7;margin:0 0 24px}
+.rev .who{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-top:auto}
+.rev .when{display:block;color:var(--bronze);margin-top:6px;letter-spacing:.1em}
 .note{background:var(--ink);color:var(--bone);padding:14px 44px;font-size:11px;letter-spacing:.1em}
 </style></head><body>
 
@@ -112,7 +113,7 @@ footer a:hover{color:var(--bronze)}
     <h2 class="d" style="margin:0">What clients <em>say</em></h2>
     <a class="badge" href="https://search.google.com/local/reviews?placeid=ChIJFxk0CliXwoARduccr3rwkMQ" target="_blank" rel="noopener">
       <span class="num">5.0</span>
-      <span><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="lab">190+ Google reviews</span></span>
+      <span class="meta"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="lab">190+ Google reviews</span></span>
     </a>
   </div>
   <div class="revs">
