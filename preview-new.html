@@ -1,0 +1,373 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><title>PREVIEW</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--bone:#E8E4DC;--ink:#14110E;--bronze:#8B6F52;--gold:#C9A96E;--muted:#6E665C;--line:#D6D0C4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bone);color:var(--ink);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--ink)}
+img{max-width:100%}
+.d{font-family:"Bodoni Moda",Didot,"Playfair Display",Georgia,serif;font-weight:400;letter-spacing:-.022em;line-height:1.05}
+.d em{font-style:italic;text-transform:lowercase}
+.wrapx{max-width:1240px;margin:0 auto;padding:0 34px}
+.nav{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff;display:flex;align-items:center;gap:28px;padding:14px 32px;flex-wrap:wrap}
+.nav a{color:#fff;text-decoration:none;font-size:13.5px;letter-spacing:.05em}
+.nav a:hover{color:var(--gold)}
+.navsocial{color:var(--gold)!important;font-size:11.5px;letter-spacing:.08em}
+.brand{display:flex;align-items:center;gap:13px;margin-right:auto;text-decoration:none}
+.brandlogo{height:34px;width:auto;display:block;filter:invert(1) brightness(1.9)}
+.brandsub{font-size:10.5px;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;border-left:1px solid rgba(255,255,255,.28);padding-left:13px}
+.navlinks{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+.navtoggle{display:none;background:none;border:0;color:#fff;font-size:20px;cursor:pointer}
+.drop{position:relative}
+.dropmenu{display:none;position:absolute;top:26px;left:-14px;background:#fff;min-width:230px;box-shadow:0 12px 40px rgba(0,0,0,.16);padding:8px 0;border-radius:2px}
+.drop:hover .dropmenu{display:block}
+.dropmenu a{display:block;color:var(--ink);padding:9px 18px;font-size:13.5px}
+.dropmenu a:hover{background:#F5F1E9;color:var(--bronze)}
+.kick{color:var(--gold);font-size:11px;letter-spacing:.34em;text-transform:uppercase;margin:0 0 28px;font-weight:500}
+.eyebrow{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--bronze);margin:0 0 22px;font-weight:500}
+.hero2{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--ink)}
+.hero2>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.46}
+.hero2 .inner{position:relative;z-index:2;padding:150px 0}
+.hero2 h1{margin:0;color:#F3EFE7;font-size:clamp(40px,7vw,100px);text-transform:uppercase;max-width:16ch}
+.hero2 h1 em{color:var(--gold)}
+.hero2 .sub{color:#DAD3C7;max-width:560px;margin:34px 0 40px;font-size:18px}
+.sec{padding:120px 0;border-top:1px solid var(--line)}
+.sec h2{margin:0 0 34px;font-size:clamp(30px,5vw,62px);text-transform:uppercase}
+.sec h2 em{color:var(--bronze)}
+.two{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:start}
+.story p{font-size:19px;color:#33302B;margin:0 0 26px;max-width:54ch}
+.story p.big{font-size:23px;line-height:1.55;color:var(--ink)}
+.stack img{width:100%;display:block;margin-bottom:16px;background:#D9D3C7}
+.workgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 44px}
+.workgrid img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#D9D3C7}
+.obtn{display:inline-block;border:1px solid var(--ink);color:var(--ink);text-decoration:none;padding:17px 44px;font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;transition:.2s}
+.obtn:hover{background:var(--ink);color:var(--bone)}
+.obtn.light{border-color:#DAD3C7;color:#F3EFE7}
+.obtn.light:hover{background:#F3EFE7;color:var(--ink)}
+.method{background:#DFDACF;padding:110px 0}
+.pill{display:inline-block;border:1px solid #C6BFB1;padding:9px 18px;margin:0 8px 10px 0;font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:#3A342C}
+.pill:hover{border-color:var(--bronze);color:var(--bronze)}
+.whero{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:var(--ink)}
+.whero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
+.whero .inner{position:relative;z-index:2;padding:140px 30px;max-width:1120px}
+.whero h1{margin:0;color:#F3EFE7;font-size:clamp(40px,7.2vw,104px);text-transform:uppercase}
+.whero h1 em{color:var(--gold)}
+.whero .sub{color:#DAD3C7;max-width:640px;margin:36px auto 0;font-size:17px}
+.wsec{padding:120px 0;border-top:1px solid var(--line)}
+.wnum{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--bronze);margin:0 0 20px;font-weight:500}
+.wsec h2{margin:0 0 8px;font-size:clamp(32px,5.4vw,68px);text-transform:uppercase}
+.wsec h2 em{color:var(--bronze)}
+.wplace{color:var(--muted);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 48px}
+.wtext{max-width:58ch;font-size:19px;color:#3A342C;margin:46px 0 0}
+.full{width:100%;margin:0 0 16px}
+.full img{width:100%;height:auto;display:block;background:#D9D3C7}
+.wgrid{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.wgrid img{width:100%;height:100%;object-fit:cover;display:block;background:#D9D3C7;aspect-ratio:4/3}
+.wend{padding:130px 0 140px;text-align:center;border-top:1px solid var(--line)}
+.wend h2{font-size:clamp(30px,4.6vw,58px);text-transform:uppercase;margin:0 0 24px}
+.wend h2 em{color:var(--bronze)}
+.wend p{max-width:56ch;margin:0 auto 40px;color:#3A342C}
+footer{background:var(--ink);color:#B9B2A8;padding:56px 32px 46px;text-align:center;font-size:13.5px;line-height:1.9}
+footer a{color:#F3F0EB;text-decoration:none}
+footer a:hover{color:var(--bronze)}
+.fname{color:#fff;font-family:"Bodoni Moda",Georgia,serif;font-size:20px;display:block;margin-bottom:7px}
+.frule{width:56px;height:1px;background:var(--bronze);margin:26px auto 24px}
+.social{display:flex;gap:30px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}
+.social a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze)}
+.social a:hover{color:#fff}
+.cupline{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#7A736A;margin-bottom:16px}
+.areas{font-size:12.5px;color:#8A837A}
+hr.hr{border:0;border-top:1px solid var(--line);margin:44px 0}
+@media(max-width:900px){.two{grid-template-columns:1fr;gap:44px}.workgrid{grid-template-columns:1fr 1fr}.sec,.wsec{padding:74px 0}}
+@media(max-width:1180px){.navlinks{display:none;width:100%;flex-direction:column;align-items:flex-start;gap:14px;padding-top:14px}.navlinks.open{display:flex}.navtoggle{display:block}.dropmenu{position:static;display:block;box-shadow:none;padding:6px 0 6px 14px}.dropmenu a{color:var(--gold);padding:5px 0}.wgrid{grid-template-columns:1fr}}
+
+.heroimgs{position:absolute;inset:0;z-index:0}
+.heroimgs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease-in-out}
+.heroimgs img.on{opacity:1}
+.hero2 .heroimgs img.on,.whero .heroimgs img.on{opacity:.48}
+.whero .heroimgs img.on{opacity:.52}
+@media(prefers-reduced-motion:reduce){.heroimgs img{transition:none}}
+
+:root{--bone:#E8E4DC;--ink:#14110E;--bronze:#8B6F52;--gold:#C9A96E;--muted:#6E665C;--line:#D6D0C4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bone);color:var(--ink);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--ink)}
+img{max-width:100%}
+.d{font-family:"Bodoni Moda",Didot,"Playfair Display",Georgia,serif;font-weight:400;letter-spacing:-.022em;line-height:1.05}
+.d em{font-style:italic;text-transform:lowercase}
+.wrapx{max-width:1240px;margin:0 auto;padding:0 34px}
+.nav{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff;display:flex;align-items:center;gap:28px;padding:14px 32px;flex-wrap:wrap}
+.nav a{color:#fff;text-decoration:none;font-size:13.5px;letter-spacing:.05em}
+.nav a:hover{color:var(--gold)}
+.navsocial{color:var(--gold)!important;font-size:11.5px;letter-spacing:.08em}
+.brand{display:flex;align-items:center;gap:13px;margin-right:auto;text-decoration:none}
+.brandlogo{height:34px;width:auto;display:block;filter:invert(1) brightness(1.9)}
+.brandsub{font-size:10.5px;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;border-left:1px solid rgba(255,255,255,.28);padding-left:13px}
+.navlinks{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+.navtoggle{display:none;background:none;border:0;color:#fff;font-size:20px;cursor:pointer}
+.drop{position:relative}
+.dropmenu{display:none;position:absolute;top:26px;left:-14px;background:#fff;min-width:230px;box-shadow:0 12px 40px rgba(0,0,0,.16);padding:8px 0;border-radius:2px}
+.drop:hover .dropmenu{display:block}
+.dropmenu a{display:block;color:var(--ink);padding:9px 18px;font-size:13.5px}
+.dropmenu a:hover{background:#F5F1E9;color:var(--bronze)}
+.kick{color:var(--gold);font-size:11px;letter-spacing:.34em;text-transform:uppercase;margin:0 0 28px;font-weight:500}
+.eyebrow{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--bronze);margin:0 0 22px;font-weight:500}
+.hero2{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--ink)}
+.hero2>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.46}
+.hero2 .inner{position:relative;z-index:2;padding:150px 0}
+.hero2 h1{margin:0;color:#F3EFE7;font-size:clamp(40px,7vw,100px);text-transform:uppercase;max-width:16ch}
+.hero2 h1 em{color:var(--gold)}
+.hero2 .sub{color:#DAD3C7;max-width:560px;margin:34px 0 40px;font-size:18px}
+.sec{padding:120px 0;border-top:1px solid var(--line)}
+.sec h2{margin:0 0 34px;font-size:clamp(30px,5vw,62px);text-transform:uppercase}
+.sec h2 em{color:var(--bronze)}
+.two{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:start}
+.story p{font-size:19px;color:#33302B;margin:0 0 26px;max-width:54ch}
+.story p.big{font-size:23px;line-height:1.55;color:var(--ink)}
+.stack img{width:100%;display:block;margin-bottom:16px;background:#D9D3C7}
+.workgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 44px}
+.workgrid img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#D9D3C7}
+.obtn{display:inline-block;border:1px solid var(--ink);color:var(--ink);text-decoration:none;padding:17px 44px;font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;transition:.2s}
+.obtn:hover{background:var(--ink);color:var(--bone)}
+.obtn.light{border-color:#DAD3C7;color:#F3EFE7}
+.obtn.light:hover{background:#F3EFE7;color:var(--ink)}
+.method{background:#DFDACF;padding:110px 0}
+.pill{display:inline-block;border:1px solid #C6BFB1;padding:9px 18px;margin:0 8px 10px 0;font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:#3A342C}
+.pill:hover{border-color:var(--bronze);color:var(--bronze)}
+.whero{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:var(--ink)}
+.whero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
+.whero .inner{position:relative;z-index:2;padding:140px 30px;max-width:1120px}
+.whero h1{margin:0;color:#F3EFE7;font-size:clamp(40px,7.2vw,104px);text-transform:uppercase}
+.whero h1 em{color:var(--gold)}
+.whero .sub{color:#DAD3C7;max-width:640px;margin:36px auto 0;font-size:17px}
+.wsec{padding:120px 0;border-top:1px solid var(--line)}
+.wnum{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--bronze);margin:0 0 20px;font-weight:500}
+.wsec h2{margin:0 0 8px;font-size:clamp(32px,5.4vw,68px);text-transform:uppercase}
+.wsec h2 em{color:var(--bronze)}
+.wplace{color:var(--muted);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 48px}
+.wtext{max-width:58ch;font-size:19px;color:#3A342C;margin:46px 0 0}
+.full{width:100%;margin:0 0 16px}
+.full img{width:100%;height:auto;display:block;background:#D9D3C7}
+.wgrid{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.wgrid img{width:100%;height:100%;object-fit:cover;display:block;background:#D9D3C7;aspect-ratio:4/3}
+.wend{padding:130px 0 140px;text-align:center;border-top:1px solid var(--line)}
+.wend h2{font-size:clamp(30px,4.6vw,58px);text-transform:uppercase;margin:0 0 24px}
+.wend h2 em{color:var(--bronze)}
+.wend p{max-width:56ch;margin:0 auto 40px;color:#3A342C}
+footer{background:var(--ink);color:#B9B2A8;padding:56px 32px 46px;text-align:center;font-size:13.5px;line-height:1.9}
+footer a{color:#F3F0EB;text-decoration:none}
+footer a:hover{color:var(--bronze)}
+.fname{color:#fff;font-family:"Bodoni Moda",Georgia,serif;font-size:20px;display:block;margin-bottom:7px}
+.frule{width:56px;height:1px;background:var(--bronze);margin:26px auto 24px}
+.social{display:flex;gap:30px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}
+.social a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze)}
+.social a:hover{color:#fff}
+.cupline{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#7A736A;margin-bottom:16px}
+.areas{font-size:12.5px;color:#8A837A}
+hr.hr{border:0;border-top:1px solid var(--line);margin:44px 0}
+@media(max-width:900px){.two{grid-template-columns:1fr;gap:44px}.workgrid{grid-template-columns:1fr 1fr}.sec,.wsec{padding:74px 0}}
+@media(max-width:1180px){.navlinks{display:none;width:100%;flex-direction:column;align-items:flex-start;gap:14px;padding-top:14px}.navlinks.open{display:flex}.navtoggle{display:block}.dropmenu{position:static;display:block;box-shadow:none;padding:6px 0 6px 14px}.dropmenu a{color:var(--gold);padding:5px 0}.wgrid{grid-template-columns:1fr}}
+
+.heroimgs{position:absolute;inset:0;z-index:0}
+.heroimgs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease-in-out}
+.heroimgs img.on{opacity:1}
+.hero2 .heroimgs img.on,.whero .heroimgs img.on{opacity:.48}
+.whero .heroimgs img.on{opacity:.52}
+@media(prefers-reduced-motion:reduce){.heroimgs img{transition:none}}
+.revs{border-top:1px solid var(--line,#D6D0C4);padding-top:90px}.revgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin:18px 0 42px}.rev{margin:0;padding:22px 0 0;border:0;border-top:2px solid #C9A96E}.rev p{font-size:17px;line-height:1.65;color:#2B2822;margin:0 0 16px}.rev cite{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#8B6F52;display:block}.rev cite span{display:block;text-transform:none;letter-spacing:0;font-size:13.5px;color:#6E665C;margin-top:7px}@media(max-width:820px){.revgrid{grid-template-columns:1fr;gap:30px}.revs{padding-top:54px}}
+:root{--ink:#0D0B0A;--taupe:#8B6F52;--bronze:#8B6F52;--cream:#EAE4D8;--paper:#ffffff;--muted:#6b6b6b;--line:#E4DDD2;}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--ink)}
+h1,h2,h3{font-family:"Fraunces",Georgia,"Times New Roman",serif;font-weight:400}.nav{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff;display:flex;align-items:center;
+gap:28px;padding:14px 32px;flex-wrap:wrap}.nav a{color:#fff;text-decoration:none;font-size:14px;letter-spacing:.04em}.nav a:hover{color:var(--taupe)}.navsocial{color:var(--taupe)!important;font-size:11.5px;letter-spacing:.08em}.brand{display:flex;align-items:center;gap:13px;margin-right:auto;text-decoration:none}.brandlogo{height:34px;width:auto;display:block;filter:invert(1) brightness(1.9)}.brandsub{font-size:10.5px;letter-spacing:.16em;color:var(--taupe);text-transform:uppercase;
+border-left:1px solid rgba(255,255,255.28);padding-left:13px}.navlinks{display:flex;gap:26px;align-items:center;flex-wrap:wrap}.navtoggle{display:none;background:none;border:0;color:#fff;font-size:20px;cursor:pointer}.drop{position:relative}.dropmenu{display:none;position:absolute;top:26px;left:-14px;background:#fff;min-width:250px;
+box-shadow:0 12px 40px rgba(0,0,0.16);padding:8px 0;max-height:70vh;overflow:auto;border-radius:2px}.drop:hover.dropmenu{display:block}.dropmenu a{display:block;color:var(--ink);padding:8px 18px;font-size:13.5px}.dropmenu a:hover{background:#F7F4EE;color:var(--bronze)}.hero{background:#EFEAE0;color:var(--ink);padding:104px 32px 88px;text-align:center;position:relative;
+border-bottom:1px solid #DDD4C6}.hero:after{content:"";position:absolute;left:50%;bottom:-1px;transform:translateX(-50%);width:74px;height:3px;background:var(--bronze)}.hero.eyebrow{color:var(--bronze);font-size:11px;letter-spacing:.24em;text-transform:uppercase;margin:0 0 22px;
+font-family:"Inter",sans-serif}.hero h1{font-size:clamp(31px,4.6vw,52px);letter-spacing:-.012em;margin:0 auto;max-width:900px;line-height:1.17}.hero p{color:#4A443C;max-width:640px;margin:24px auto 0;font-size:17.5px;font-weight:500}.rule{height:3px;background:var(--taupe)}
+main{max-width:720px;margin:0 auto;padding:60px 26px 90px;font-size:17.5px}
+main h2{font-size:23px;font-weight:600;margin:52px 0 14px;letter-spacing:-.01em}
+main p{margin:0 0 20px}
+blockquote{border-left:3px solid var(--taupe);margin:28px 0;padding:6px 0 6px 22px;color:#333;font-style:italic}.tt{margin:38px 0;display:flex;justify-content:center}
+hr.hr{border:0;border-top:1px solid var(--line);margin:34px 0}
+main h3{font-size:19px;margin:36px 0 12px}
+blockquote{border-left:2px solid var(--bronze);margin:30px 0;padding:4px 0 4px 24px;color:#33302B;font-style:normal;font-size:17px}.trustline{background:#F7F4EE;border-left:3px solid var(--bronze);padding:18px 22px;margin:34px 0 6px;
+font-size:15px;color:#3A352F}.embed-slot{background:#F7F4EE;border:1px dashed #D8CFC0;color:var(--muted);text-align:center;
+padding:44px;margin:32px 0;font-size:14px;letter-spacing:.05em}.faq{margin-top:16px;border-top:1px solid #E4DDD2}.faq details{border-bottom:1px solid #E4DDD2;padding:16px 0}.faq summary{cursor:pointer;font-weight:600;font-size:16.5px;list-style:none}.faq summary::-webkit-details-marker{display:none}.faq summary:before{content:"+";margin-right:12px;color:var(--taupe);font-weight:400}.faq details[open] summary:before{content:"-"}.faq p{margin:12px 0 0 26px;color:#3a3a3a}.cta{background:#F7F4EE;padding:34px;margin:56px 0 0;text-align:center}.cta p{margin:0 0 18px;font-size:18px;font-family:"Fraunces",Georgia,serif}.cta a{display:inline-block;background:var(--bronze);color:#fff;padding:13px 30px;text-decoration:none;font-size:14.5px;letter-spacing:.05em}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin-top:34px}.card{border:1px solid #E4DDD2;padding:20px;text-decoration:none;display:block;transition:.15s}.card:hover{border-color:var(--bronze);transform:translateY(-2px)}.card strong{display:block;font-size:16.5px;margin-bottom:7px;font-family:"Fraunces",Georgia,serif;font-weight:400}.card span{color:var(--muted);font-size:13.5px}
+footer{background:var(--ink);color:#B9B2A8;padding:56px 32px 46px;text-align:center;font-size:13.5px;line-height:1.9}
+footer a{color:#F3F0EB;text-decoration:none}
+footer a:hover{color:var(--bronze)}
+footer.fname{color:#fff;font-family:"Fraunces",Georgia,serif;font-size:20px;display:block;margin-bottom:7px}.frule{width:56px;height:1px;background:var(--bronze);margin:26px auto 24px}.social{display:flex;gap:30px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}.social a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze)}.social a:hover{color:#fff}.cupline{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#7A736A;margin-bottom:16px}.areas{font-size:12.5px;color:#8A837A}.lead{background:#F7F4EE;padding:34px 30px;margin:34px 0}.lead h3{margin:0 0 8px;font-size:22px;font-family:"Fraunces",Georgia,serif;font-weight:400}.lead p.sub{margin:0 0 20px;color:var(--muted);font-size:15px}.lead label{display:block;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;color:#555;margin:14px 0 5px}.lead input.lead select.lead textarea{width:100%;padding:11px 12px;border:1px solid #D8CFC0;background:#fff;
+font-size:15px;font-family:inherit;border-radius:2px}.lead input:focus.lead select:focus.lead textarea:focus{outline:none;border-color:var(--ink)}.lead button{margin-top:20px;background:var(--bronze);color:#fff;border:0;padding:14px 30px;font-size:14.5px;
+letter-spacing:.05em;cursor:pointer;width:100%}.lead button:hover{opacity:.88}.lead.fine{margin-top:14px;font-size:12px;color:var(--muted);text-align:center}.ok{display:none;background:#eef3ee;border-left:3px solid #4a7a52;padding:20px;margin-top:16px}.steps{counter-reset:s;padding:0;list-style:none;margin:26px 0}.steps li{counter-increment:s;position:relative;padding:0 0 20px 46px;font-size:16px}.steps li:before{content:counter(s);position:absolute;left:0;top:-2px;width:30px;height:30px;border-radius:50%;
+background:var(--bronze);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px}
+@media(max-width:1180px){.navlinks{display:none;width:100%;flex-direction:column;align-items:flex-start;gap:14px;padding-top:14px}.navlinks.open{display:flex}.navtoggle{display:block}.dropmenu{position:static;display:block;box-shadow:none;padding:6px 0 6px 14px;max-height:210px}.dropmenu a{color:var(--taupe);padding:5px 0}
+}.qf{border:1px solid var(--line,#D6D0C4);padding:26px 30px;margin:34px 0}.qfh{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#8B6F52;margin:0 0 14px;font-weight:600}.qf ul{margin:0;padding-left:18px}.qf li{margin:0 0 8px;font-size:15.5px;line-height:1.6}
+:root{--ink:#0D0B0A;--taupe:#8B6F52;--bronze:#8B6F52;--cream:#EAE4D8;--paper:#ffffff;--muted:#6b6b6b;--line:#E4DDD2;}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--ink)}
+h1,h2,h3{font-family:"Fraunces",Georgia,"Times New Roman",serif;font-weight:400}.nav{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff;display:flex;align-items:center;
+gap:28px;padding:14px 32px;flex-wrap:wrap}.nav a{color:#fff;text-decoration:none;font-size:14px;letter-spacing:.04em}.nav a:hover{color:var(--taupe)}.navsocial{color:var(--taupe)!important;font-size:11.5px;letter-spacing:.08em}.brand{display:flex;align-items:center;gap:13px;margin-right:auto;text-decoration:none}.brandlogo{height:34px;width:auto;display:block;filter:invert(1) brightness(1.9)}.brandsub{font-size:10.5px;letter-spacing:.16em;color:var(--taupe);text-transform:uppercase;
+border-left:1px solid rgba(255,255,255.28);padding-left:13px}.navlinks{display:flex;gap:26px;align-items:center;flex-wrap:wrap}.navtoggle{display:none;background:none;border:0;color:#fff;font-size:20px;cursor:pointer}.drop{position:relative}.dropmenu{display:none;position:absolute;top:26px;left:-14px;background:#fff;min-width:250px;
+box-shadow:0 12px 40px rgba(0,0,0.16);padding:8px 0;max-height:70vh;overflow:auto;border-radius:2px}.drop:hover.dropmenu{display:block}.dropmenu a{display:block;color:var(--ink);padding:8px 18px;font-size:13.5px}.dropmenu a:hover{background:#F7F4EE;color:var(--bronze)}.hero{background:#EFEAE0;color:var(--ink);padding:104px 32px 88px;text-align:center;position:relative;
+border-bottom:1px solid #DDD4C6}.hero:after{content:"";position:absolute;left:50%;bottom:-1px;transform:translateX(-50%);width:74px;height:3px;background:var(--bronze)}.hero.eyebrow{color:var(--bronze);font-size:11px;letter-spacing:.24em;text-transform:uppercase;margin:0 0 22px;
+font-family:"Inter",sans-serif}.hero h1{font-size:clamp(31px,4.6vw,52px);letter-spacing:-.012em;margin:0 auto;max-width:900px;line-height:1.17}.hero p{color:#4A443C;max-width:640px;margin:24px auto 0;font-size:17.5px;font-weight:500}.rule{height:3px;background:var(--taupe)}
+main{max-width:720px;margin:0 auto;padding:60px 26px 90px;font-size:17.5px}
+main h2{font-size:23px;font-weight:600;margin:52px 0 14px;letter-spacing:-.01em}
+main p{margin:0 0 20px}
+blockquote{border-left:3px solid var(--taupe);margin:28px 0;padding:6px 0 6px 22px;color:#333;font-style:italic}.tt{margin:38px 0;display:flex;justify-content:center}
+hr.hr{border:0;border-top:1px solid var(--line);margin:34px 0}
+main h3{font-size:19px;margin:36px 0 12px}
+blockquote{border-left:2px solid var(--bronze);margin:30px 0;padding:4px 0 4px 24px;color:#33302B;font-style:normal;font-size:17px}.trustline{background:#F7F4EE;border-left:3px solid var(--bronze);padding:18px 22px;margin:34px 0 6px;
+font-size:15px;color:#3A352F}.embed-slot{background:#F7F4EE;border:1px dashed #D8CFC0;color:var(--muted);text-align:center;
+padding:44px;margin:32px 0;font-size:14px;letter-spacing:.05em}.faq{margin-top:16px;border-top:1px solid #E4DDD2}.faq details{border-bottom:1px solid #E4DDD2;padding:16px 0}.faq summary{cursor:pointer;font-weight:600;font-size:16.5px;list-style:none}.faq summary::-webkit-details-marker{display:none}.faq summary:before{content:"+";margin-right:12px;color:var(--taupe);font-weight:400}.faq details[open] summary:before{content:"-"}.faq p{margin:12px 0 0 26px;color:#3a3a3a}.cta{background:#F7F4EE;padding:34px;margin:56px 0 0;text-align:center}.cta p{margin:0 0 18px;font-size:18px;font-family:"Fraunces",Georgia,serif}.cta a{display:inline-block;background:var(--bronze);color:#fff;padding:13px 30px;text-decoration:none;font-size:14.5px;letter-spacing:.05em}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin-top:34px}.card{border:1px solid #E4DDD2;padding:20px;text-decoration:none;display:block;transition:.15s}.card:hover{border-color:var(--bronze);transform:translateY(-2px)}.card strong{display:block;font-size:16.5px;margin-bottom:7px;font-family:"Fraunces",Georgia,serif;font-weight:400}.card span{color:var(--muted);font-size:13.5px}
+footer{background:var(--ink);color:#B9B2A8;padding:56px 32px 46px;text-align:center;font-size:13.5px;line-height:1.9}
+footer a{color:#F3F0EB;text-decoration:none}
+footer a:hover{color:var(--bronze)}
+footer.fname{color:#fff;font-family:"Fraunces",Georgia,serif;font-size:20px;display:block;margin-bottom:7px}.frule{width:56px;height:1px;background:var(--bronze);margin:26px auto 24px}.social{display:flex;gap:30px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}.social a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze)}.social a:hover{color:#fff}.cupline{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#7A736A;margin-bottom:16px}.areas{font-size:12.5px;color:#8A837A}.lead{background:#F7F4EE;padding:34px 30px;margin:34px 0}.lead h3{margin:0 0 8px;font-size:22px;font-family:"Fraunces",Georgia,serif;font-weight:400}.lead p.sub{margin:0 0 20px;color:var(--muted);font-size:15px}.lead label{display:block;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;color:#555;margin:14px 0 5px}.lead input.lead select.lead textarea{width:100%;padding:11px 12px;border:1px solid #D8CFC0;background:#fff;
+font-size:15px;font-family:inherit;border-radius:2px}.lead input:focus.lead select:focus.lead textarea:focus{outline:none;border-color:var(--ink)}.lead button{margin-top:20px;background:var(--bronze);color:#fff;border:0;padding:14px 30px;font-size:14.5px;
+letter-spacing:.05em;cursor:pointer;width:100%}.lead button:hover{opacity:.88}.lead.fine{margin-top:14px;font-size:12px;color:var(--muted);text-align:center}.ok.warn{background:#fbf6ec;border-left-color:#8B6F52}.ok.warn a{color:#8B6F52;font-weight:600}.ok{display:none;background:#eef3ee;border-left:3px solid #4a7a52;padding:20px;margin-top:16px}.steps{counter-reset:s;padding:0;list-style:none;margin:26px 0}.steps li{counter-increment:s;position:relative;padding:0 0 20px 46px;font-size:16px}.steps li:before{content:counter(s);position:absolute;left:0;top:-2px;width:30px;height:30px;border-radius:50%;
+background:var(--bronze);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px}
+@media(max-width:1180px){.navlinks{display:none;width:100%;flex-direction:column;align-items:flex-start;gap:14px;padding-top:14px}.navlinks.open{display:flex}.navtoggle{display:block}.dropmenu{position:static;display:block;box-shadow:none;padding:6px 0 6px 14px;max-height:210px}.dropmenu a{color:var(--taupe);padding:5px 0}
+}:root{color-scheme:light}#pvbar{position:fixed;top:0;left:0;right:0;z-index:9999;background:#14110E;color:#E8E4DC;font:500 11px/1 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;display:flex}#pvbar button{flex:1;background:none;border:0;color:#8d8579;padding:13px 3px;font:inherit;letter-spacing:inherit;text-transform:inherit;cursor:pointer}#pvbar button.on{color:#C9A96E;box-shadow:inset 0 -2px 0 #C9A96E}body{padding-top:40px!important}.pvpage{display:none}.pvpage.on{display:block}</style></head><body><div id="pvbar"><button data-t="home" class="on">Home</button><button data-t="work">Sold + Built</button><button data-t="story">My Story</button><button data-t="worth">Worth</button></div><div class="pvpage on" id="pv-home"><section class="hero2"><div class="heroimgs"><img class="on" src="images/cumpston-exterior.jpg" alt="A 1959 Sherman Oaks ranch rebuilt from the studs by Brandon Melgar"><img src="images/milan-roofdeck.jpg" alt="" aria-hidden="true"><img src="images/stclair-kitchen-wide.jpg" alt="" aria-hidden="true"><img src="images/collett-exterior.jpg" alt="" aria-hidden="true"><img src="images/w74th-exterior.jpg" alt="" aria-hidden="true"></div><div class="wrapx"><div class="inner"><p class="kick">Studio City &middot; Sherman Oaks &middot; The Valley</p><h1 class="d">I build <em>equity.</em> Sometimes I build <em>the house.</em></h1><p class="sub">Born and raised in Studio City, in a family of lenders. I help families move, and when a house has been overlooked I buy it, take it down to the studs, and give it a second chance.</p><a class="obtn light" href="notable-sales.html">See the work</a></div></div></section><section class="sec"><div class="wrapx"><div class="two"><div class="story"><p class="eyebrow">Who I am</p><h2 class="d">Actually <em>from here.</em></h2><p class="big">I grew up in Woodbridge, in Studio City. My dad added a bedroom and a bathroom onto our house, and I still remember the smell of sawdust while they were framing it.</p><p>That is the first thing I ever remember loving. Not houses exactly. The building of them. I still walk my yorkie Bruno through Woodbridge Park most weekends, same neighborhood, though he pushes for Beeman Park and he has opinions about which.</p><p>My dad has been a mortgage lender my whole life and my sister is one too, so real estate is the only language my family speaks. My dad was always buying property, and I got into this to help him build his portfolio.</p><p>So I do two things. I help families cross into the next part of their life, and I buy overlooked houses and give them a second chance. That is where Cup of Equity comes from. Equity is not a word I picked because it sounded good. It is the thing I do.</p><a class="obtn" href="my-story.html">More of the story</a></div><div class="stack"><img src="images/cumpston-gossip-room.jpg" alt="The Gossip Room, an olive green lounge with a walnut wet bar, in a Sherman Oaks house Brandon Melgar built" loading="lazy"><img src="images/w74th-nook.jpg" alt="A breakfast nook with original built in china niches in a 1920s Spanish bungalow" loading="lazy"></div></div></div></section><section class="sec"><div class="wrapx"><p class="eyebrow">Selected work</p><h2 class="d">Some <em>I sold.</em> Some <em>I built.</em></h2><div class="workgrid"><img src="images/stclair-kitchen-wide.jpg" alt="Walnut kitchen with emerald green stacked tile at 5625 Saint Clair Avenue in Valley Village" loading="lazy"><img src="images/malibu-deck-sunset.jpg" alt="Oceanfront deck at 20460 Pacific Coast Highway in Malibu at sunset" loading="lazy"><img src="images/cumpston-powder-room.jpg" alt="Oxblood powder room with black glazed tile at 13824 Cumpston Street in Sherman Oaks" loading="lazy"></div><a class="obtn" href="notable-sales.html">See all seven</a></div></section><section class="method"><div class="wrapx"><p class="eyebrow">How I price</p><h2 class="d">The same house. One street <em>apart.</em></h2><p style="max-width:58ch;font-size:19px;color:#33302B">In the Valley a home can run from $1.5M to the $32.5M asking on Fryman Road right now, and the line between them is often a single street. I map these neighborhoods block by block, so you know which side you are standing on before you write an offer.</p><div style="margin:34px 0 30px"><a class="pill" href="studio-city/index.html">Studio City</a><a class="pill" href="sherman-oaks/index.html">Sherman Oaks</a><a class="pill" href="the-valley/encino.html">Encino</a><a class="pill" href="the-valley/toluca-lake.html">Toluca Lake</a><a class="pill" href="the-valley/burbank.html">Burbank</a><a class="pill" href="blog/index.html">The blog</a></div><a class="obtn" href="free-pocket-analysis.html">What is your street worth?</a></div></section><script>
+(function(){
+  document.querySelectorAll('.heroimgs').forEach(function(box){
+    var imgs=box.querySelectorAll('img'); if(imgs.length<2) return;
+    var i=0;
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    setInterval(function(){
+      imgs[i].classList.remove('on');
+      i=(i+1)%imgs.length;
+      imgs[i].classList.add('on');
+    },5200);
+  });
+})();
+</script></div><div class="pvpage" id="pv-work"><section class="whero"><div class="heroimgs"><img class="on" src="images/malibu-deck-sunset.jpg" alt="Oceanfront deck at 20460 Pacific Coast Highway in Malibu at sunset"><img src="images/cumpston-gossip-room.jpg" alt="" aria-hidden="true"><img src="images/milan-roofdeck.jpg" alt="" aria-hidden="true"><img src="images/encino-midcentury-living.jpg" alt="" aria-hidden="true"><img src="images/collett-theater.jpg" alt="" aria-hidden="true"></div><div class="inner"><p class="kick">Selected work</p><h1 class="d">Some <em>I sold.</em><br>Some <em>I built.</em></h1><p class="sub">Studio City, Sherman Oaks, Valley Village, Encino, Malibu and South Los Angeles. Some I sold for other people. Some I bought, rebuilt and sold myself.</p></div></section><section class="wsec"><div class="wrapx"><p class="wnum">01 &middot; Sherman Oaks</p><h2 class="d">Cumpston <em>street</em></h2><p class="wplace">Bought it. Built it. Sold it.</p><div class="full"><img src="images/cumpston-exterior.jpg" alt="Front elevation of 13824 Cumpston Street in Sherman Oaks, a 1959 ranch rebuilt with board and batten siding, a stacked stone base and new landscaping" loading="lazy"></div><div class="wgrid"><img src="images/cumpston-gossip-room.jpg" alt="The Gossip Room at 13824 Cumpston Street, an olive green lounge with a skylight, salon hung gallery wall and a walnut wet bar" loading="lazy"><img src="images/cumpston-powder-room.jpg" alt="Powder room at 13824 Cumpston Street with high gloss oxblood walls, a black glazed tile shower and a brass beaded mirror" loading="lazy"></div><p class="wtext">I bought a 1959 ranch and took it down to the studs. The listing called the olive green room the Gossip Room. The powder room is high gloss oxblood with black glazed tile. Beige is safer. Beige is also forgettable.</p></div></section><section class="wsec"><div class="wrapx"><p class="wnum">02 &middot; Malibu</p><h2 class="d">Pacific Coast <em>highway</em></h2><p class="wplace">Oceanfront &middot; represented the seller</p><div class="full"><img src="images/malibu-living.jpg" alt="Living room at 20460 Pacific Coast Highway in Malibu with a lit fireplace and folding doors opening onto the Pacific Ocean" loading="lazy"></div><div class="wgrid"><img src="images/malibu-deck-sunset.jpg" alt="Oceanfront deck at 20460 Pacific Coast Highway at sunset with the surf breaking directly below the glass rail" loading="lazy"><img src="images/malibu-living.jpg" alt="Living room opening directly to the ocean at 20460 Pacific Coast Highway" loading="lazy"></div><p class="wtext">Nearly a thousand square feet of deck built out over the sand.</p></div></section><section class="wsec"><div class="wrapx"><p class="wnum">03 &middot; Valley Village</p><h2 class="d">Saint Clair <em>avenue</em></h2><p class="wplace">Bought it. Built it. Sold it.</p><div class="full"><img src="images/stclair-kitchen-wide.jpg" alt="Kitchen at 5625 Saint Clair Avenue, a U shaped walnut kitchen with emerald green vertical stacked tile, marble counters, a plaster hood and a skylight" loading="lazy"></div><div class="wgrid"><img src="images/stclair-guestbath.jpg" alt="Guest bathroom at 5625 Saint Clair Avenue with blush walls, vertical terracotta tile, unlacquered brass and a rift oak vanity" loading="lazy"><img src="images/stclair-bath.jpg" alt="Primary bathroom at 5625 Saint Clair Avenue with terracotta walls, a double floating oak vanity and a skylit walk in shower" loading="lazy"></div><p class="wtext">Emerald tile, terracotta baths, unlacquered brass, plaster arches. Every one of those was my call. I could have played it safe and painted everything white. Twenty eight days later somebody bought it because it was not.</p></div></section><section class="wsec"><div class="wrapx"><p class="wnum">04 &middot; Valley Village</p><h2 class="d">Milan <em>drive</em></h2><p class="wplace">Represented the seller</p><div class="full"><img src="images/milan-roofdeck.jpg" alt="Private rooftop deck at 12003 Milan Drive in Valley Village with turf, a hanging egg chair, loungers, planters and a view to the hills" loading="lazy"></div><div class="wgrid"><img src="images/milan-kitchen.jpg" alt="Kitchen at 12003 Milan Drive with white textured cabinetry, a quartz island seating four, subway tile and orb pendants" loading="lazy"><img src="images/milan-exterior.jpg" alt="Row of modern three story townhomes at 12003 Milan Drive with steel balcony rails and a shared paver drive" loading="lazy"></div><p class="wtext">A rooftop with turf, string lights and a view of the hills. Not everyone is buying oceanfront. Most people are buying the life they will actually live, and this one has it on the roof.</p></div></section><section class="wsec"><div class="wrapx"><p class="wnum">05 &middot; Encino</p><h2 class="d">Midcentury post <em>and beam</em></h2><p class="wplace">Represented the seller</p><div class="full"><img src="images/encino-midcentury-living.jpg" alt="Open dining and living room of a midcentury post and beam home in Encino with a vaulted white painted beamed ceiling and an original stone fireplace wall" loading="lazy"></div><div class="wgrid"><img src="images/encino-midcentury-entry.jpg" alt="Front entry of the Encino midcentury with a clerestory glass gable, ipe wood siding and a cable rail walkway" loading="lazy"><img src="images/encino-midcentury-patio.jpg" alt="Rear patio of the Encino midcentury with a horizontal ipe fence, lounge seating and a lawn beyond" loading="lazy"></div><p class="wtext">Real midcentury character, not a spec finish pretending at it. Architecturally the most distinctive house I have sold.</p></div></section><section class="wsec"><div class="wrapx"><p class="wnum">06 &middot; Encino</p><h2 class="d">Collett <em>avenue</em></h2><p class="wplace">Represented the seller</p><div class="full"><img src="images/collett-exterior.jpg" alt="Front elevation at dusk of 5173 Collett Avenue in Encino, a modern farmhouse with board and batten siding, black steel windows and a hedged entry" loading="lazy"></div><div class="wgrid"><img src="images/collett-kitchen.jpg" alt="Kitchen at 5173 Collett Avenue with black cabinetry, a white oak island and hood, white subway tile to the ceiling and brass hardware" loading="lazy"><img src="images/collett-theater.jpg" alt="Home theater at 5173 Collett Avenue with black panelled walls, a tiered carpeted seating platform and a wall mounted screen" loading="lazy"></div><p class="wtext">A five bedroom modern farmhouse south of the boulevard, with a proper home theater built into the lower level.</p></div></section><section class="wsec"><div class="wrapx"><p class="wnum">07 &middot; Los Angeles</p><h2 class="d">West 74th <em>street</em></h2><p class="wplace">Bought it. Built it. Sold it.</p><div class="full"><img src="images/w74th-dining.jpg" alt="Dining room at 844 West 74th Street painted deep terracotta with arched openings through to the living room and kitchen" loading="lazy"></div><div class="wgrid"><img src="images/w74th-exterior.jpg" alt="Front elevation of 844 West 74th Street, a 1920s Spanish bungalow with a clay tile roof, arched porch and mature topiary" loading="lazy"><img src="images/w74th-nook.jpg" alt="Breakfast nook at 844 West 74th Street with original built in china niches and a scalloped plaster surround" loading="lazy"></div><p class="wtext">A 1920s Spanish with its arches, coved ceilings and built in china niches still intact. The easy money says gut it. I kept all of it and painted the dining room terracotta. Original character is worth saving, and buyers pay for it.</p></div></section><section class="wsec revs"><div class="wrapx"><p class="wnum">What clients say</p><h2 class="d">The houses are the <em>easy part.</em></h2><div class="revgrid"><blockquote class="rev"><p>&ldquo;Even up to the last day, Jenny sent him to help us move out. He came out last minute and helped my parents with some large plants that they were not able to move. He was a life saver!!&rdquo;</p><cite>Diana Paredes &middot; Google review<span>Sold her parents&#x27; home. They were in their eighties.</span></cite></blockquote><blockquote class="rev"><p>&ldquo;It was a tough transaction but they made everything go smoothly.&rdquo;</p><cite>Abigail Ayunan &middot; Google review<span>Closed on their new home.</span></cite></blockquote><blockquote class="rev"><p>&ldquo;Very professional and very punctual, every time I had an appointment with him.&rdquo;</p><cite>Google review<span>Found his mother her home.</span></cite></blockquote></div><a class="obtn" href="testimonials.html">Read all the reviews</a></div></section><section class="wend"><div class="wrapx"><h2 class="d">What is your <em>street</em> worth?</h2><p>Studio City, Sherman Oaks, Valley Village, North Hollywood, Toluca Lake, Encino, Burbank and Van Nuys. Not what your city is worth. What your street is worth.</p><a class="obtn" href="free-pocket-analysis.html">Find out</a></div></section><script>
+(function(){
+  document.querySelectorAll('.heroimgs').forEach(function(box){
+    var imgs=box.querySelectorAll('img'); if(imgs.length<2) return;
+    var i=0;
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    setInterval(function(){
+      imgs[i].classList.remove('on');
+      i=(i+1)%imgs.length;
+      imgs[i].classList.add('on');
+    },5200);
+  });
+})();
+</script></div><div class="pvpage" id="pv-story"><header class="hero"><h1>My Story</h1></header><div class="rule"></div>
+<p><strong>I grew up in Woodbridge, in Studio City. My dad bought a classic two bedroom two bath, and then he added another bedroom and another bath. I still remember the smell of sawdust while they were cutting and framing it.</strong></p>
+
+<p>That is the first thing I ever remember loving. Not houses exactly. The building of them.</p>
+
+<p>I still walk my yorkie Bruno through Woodbridge Park most weekends. Same neighborhood. He gets a vote on Beeman Park instead, and he has opinions about which.</p>
+
+<h2>Real estate is the only language my family speaks</h2>
+
+<p>My dad has been a mortgage broker and a lender my entire life. My sister is a lender too. This is not a career I went out and found. It is what was talked about at the dinner table for as long as I can remember.</p>
+
+<p>My dad was also always buying property. I got into real estate to help him build his portfolio, and that is where I learned the thing that still drives me: a house is a place to live, and it is also a tool.</p>
+
+<h2>What I actually do</h2>
+
+<p><strong>I help people cross.</strong> Renting the first place. Buying the first house. Outgrowing it. Downsizing once the kids are gone. Every one of those is somebody standing at the edge of a big moment, and I get to help them across. I think of myself as a bridge. I am honored to be a small part of people&#x27;s stories, and that is the part I am actually passionate about. Not transactions. People crossing.</p>
+
+<p><strong>But a roof is only half of it.</strong> Handled right, a house is the thing that catapults a family to the next step of their life. That is what growing up around lenders and landlords taught me, and it is the part most people never get told. I want my clients to have somewhere to live and something that works for them.</p>
+
+<p><strong>And I give houses a second chance.</strong> When a house has been overlooked, I buy it, take it apart, and put it back together. I have done it for myself, for my family, and for clients. A house the whole street drove past becomes a house somebody wants to live in, and the block is better for it. That is value I am bringing back to my own community, not just a sale.</p>
+
+<p>I love building homes that families will grow in and make memories in. That is the whole thing, and it started with the sawdust.</p>
+
+<p>That is also where Cup of Equity comes from. Equity is not a word I picked because it sounded good. It is the thing I do.</p>
+
+
+<p>If you are buying, selling, or just thinking about it, message me. Free, no pressure, I answer personally.</p>
+
+<p style="margin:30px 0"><a class="obtn" href="testimonials.html" style="display:inline-block;border:1px solid #14110E;color:#14110E;text-decoration:none;padding:15px 38px;font-size:11.5px;letter-spacing:.26em;text-transform:uppercase">Read what clients say</a></p><div class="qf"><p class="qfh">Quick facts</p><ul>
+<li>Grew up in the Woodbridge neighborhood of Studio City. Still lives in the Valley.</li>
+<li>REALTOR&#174; &middot; Segovia Real Estate Group &middot; Luxury Collective &middot; DRE #01999554</li>
+<li>Licensed since 2017.</li>
+<li>Comes from a family of lenders. His father and sister are both in mortgage.</li>
+<li>Works across Studio City, Sherman Oaks, Valley Village, Burbank, Toluca Lake and Encino.</li>
+
+<li>Buys overlooked houses, rebuilds them, and sells them.</li>
+</ul></div>
+
+<h2>Common questions</h2><div class="faq"><details><summary>What areas does Brandon Melgar serve?</summary><p>Studio City, Sherman Oaks, Valley Village, Burbank, Toluca Lake, and Encino in the San Fernando Valley.</p></details><details><summary>Is Brandon Melgar actually from Studio City?</summary><p>Yes. He grew up in the Woodbridge neighborhood of Studio City, went to school there, and still lives in the Valley. His father added a bedroom and a bathroom onto the family house when he was a kid, which is where his interest in building started.</p></details><details><summary>What makes Brandon Melgar different from other Studio City agents?</summary><p>He grew up in Studio City in a family of lenders. His father has been a mortgage broker his entire life and his sister is a lender too, so he treats a house as a financial tool and not only a place to live. He also buys overlooked houses, rebuilds them from the studs, and sells them, which means he has worked the building side and not only the selling side.</p></details><details><summary>Is Brandon Melgar a buyer&#x27;s agent or seller&#x27;s agent?</summary><p>Both, he represents buyers and sellers across the San Fernando Valley.</p></details><details><summary>How do I contact Brandon Melgar?</summary><p>(818) 201-8506, or message him directly, he answers personally.</p></details></div></div><div class="pvpage" id="pv-worth"><header class="hero"><p class="eyebrow">Studio City &middot; Sherman Oaks &middot; The Valley</p><h1>What&#x27;s My House Worth?</h1><p>Not what your ZIP code is worth. What your street is worth.</p></header><div class="rule"></div><p><strong>Zillow can tell you what Studio City is doing. It cannot tell you what your block is doing.</strong> Send me your address and I will tell you which micro neighborhood you are actually in, what it has done in the last 90 days, and what that means for your number.</p><p>Studio City is not one market. It is 22 micro neighborhoods, and the difference between two of them can be millions of dollars. I mapped every one of them myself, street by street. I call them pockets. That is the thing I can do that a valuation tool cannot.</p><h2>What you get back</h2><ol class="steps"><li><strong>Your micro neighborhood, named.</strong> Which one you are in and where its boundaries actually fall.</li><li><strong>What it is doing right now.</strong> Recent sales on comparable streets, not a city wide average that includes neighborhoods with nothing in common with yours.</li><li><strong>What it means for your price.</strong> A real range, and the honest reasoning behind it.</li><li><strong>And if you want it, what it would be worth fixed up.</strong> I build homes, so I can tell you what is worth doing before you list and what is not. That part is free too.</li></ol><p>Free, no obligation, and I'm not going to put you on a drip campaign. If you're two years out from selling, say so and I'll tell you what to watch.</p><div class="lead"><h3>Get your free analysis</h3><form id="leadform" onsubmit="return sendLead(event)"><label for="firstname">First name</label><input id="firstname" name="firstname" required><label for="email">Email</label><input id="email" name="email" type="email" required><label for="phone">Phone (so I can text you)</label><input id="phone" name="phone" type="tel"><label for="address">Property address</label><input id="address" name="address" required placeholder="Street address, Studio City / Sherman Oaks / etc."><label for="timeline">Where are you at?</label><select id="timeline" name="timeline"><option value="just_curious">Just curious what it's worth</option><option value="1_2_years">Thinking about selling in the next 1 to 2 years</option><option value="ready">Ready to sell now</option><option value="fix_first">I want to know what it is worth if I fix it up first</option><option value="buying">Actually looking to buy around here</option></select><button type="submit">Send me my analysis</button><p class="fine">Brandon answers these personally. Usually same day.</p></form><div class="ok" id="ok"><strong>Got it.</strong> I'll get back to you personally, usually same day.</div><div class="ok warn" id="fallback"><strong>Almost there.</strong> My form handoff is not finished yet, so it did not save automatically. Tap below and it sends me everything you just typed. I answer personally, usually same day.<p style="margin:14px 0 0"><a class="mail" href="mailto:brandon.melgar@gmail.com">Send it to me by email</a> &nbsp;&middot;&nbsp;<a href="tel:8182018506">or text (818) 201-8506</a></p></div></div><script>
+var HS_PORTAL = "245936293";
+var HS_GUID = "ab1bce8f-53db-457a-af32-783af674d0be";
+var HS_HOSTS = ["https://api-na2.hsforms.com", "https://api.hsforms.com"];
+var STD = {firstname:1, email:1, phone:1};
+
+function leadFallback(f, q){
+ var lines = [];
+ for (var k in q){ if(q[k]) lines.push(k.replace(/_/g," ") + ": " + q[k]); }
+ lines.push("page: " + document.title);
+ var box = document.getElementById("fallback");
+ box.querySelector("a.mail").href = "mailto:brandon.melgar@gmail.com"
+ + "?subject=" + encodeURIComponent("Website request, " + document.title)
+ + "&body=" + encodeURIComponent(lines.join("\n"));
+ f.style.display = "none";
+ box.style.display = "block";
+}
+
+function leadSuccess(f){
+ f.style.display = "none";
+ document.getElementById("ok").style.display = "block";
+}
+
+function sendLead(e){
+ e.preventDefault();
+ var f = e.target, q = {}, extra = [];
+ new FormData(f).forEach(function(v,k){ q[k] = v; });
+
+ var d = {fields: []};
+ for (var k in q){
+ if (!q[k]) continue;
+ if (STD[k]) d.fields.push({name:k, value:q[k]});
+ else extra.push(k.replace(/_/g," ") + ": " + q[k]);
+ }
+ extra.push("requested: " + document.title);
+ d.fields.push({name:"message", value: extra.join(" | ")});
+ d.context = {pageUri: location.href, pageName: document.title};
+ var payload = JSON.stringify(d);
+
+ function attempt(i){
+ if (i >= HS_HOSTS.length){ leadFallback(f, q); return; }
+ fetch(HS_HOSTS[i] + "/submissions/v3/integration/submit/" + HS_PORTAL + "/" + HS_GUID,
+ {method:"POST", headers:{"Content-Type":"application/json"}, body: payload}).then(function(r){ if (r && r.ok) leadSuccess(f); else attempt(i+1); }).catch(function(){ attempt(i+1); });
+ }
+ attempt(0);
+ return false;
+}</script></div><script>document.querySelectorAll('#pvbar button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('#pvbar button').forEach(function(x){x.classList.remove('on');});b.classList.add('on');document.querySelectorAll('.pvpage').forEach(function(p){p.classList.remove('on');});document.getElementById('pv-'+b.dataset.t).classList.add('on');window.scrollTo(0,0);});});document.addEventListener('click',function(e){var a=e.target.closest('a'); if(a&&!a.closest('#pvbar')) e.preventDefault();},true);[{"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "Brandon Melgar", "telephone": "(818) 201-8506", "email": "brandon.melgar@gmail.com", "jobTitle": "REALTOR", "description": "Studio City native and REALTOR with Segovia Real Estate Group. Creator of the only street-by-street micro neighborhood guides to all 22 Studio City pockets and all 33 Sherman Oaks pockets.", "worksFor": {"@type": "RealEstateAgent", "name": "Segovia Real Estate Group", "url": "https://segoviarealestate.com", "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "190", "bestRating": "5"}, "parentOrganization": {"@type": "RealEstateAgent", "name": "Luxury Collective"}}, "areaServed": ["Studio City, CA", "Sherman Oaks, CA", "Burbank, CA", "Toluca Lake, CA", "Encino, CA"], "knowsAbout": ["Studio City micro neighborhoods", "Sherman Oaks micro neighborhoods", "San Fernando Valley real estate", "home valuation", "residential real estate"], "identifier": "DRE #01999554", "url": "https://www.brandonmelgar.com", "sameAs": ["https://www.tiktok.com/@cup.of.equity.la", "https://www.instagram.com/cup.of.equity", "https://www.youtube.com/@cupofequity", "https://www.zillow.com/profile/BrandonMelgar", "https://www.linkedin.com/in/brandon-melgar-5526b1112"]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many neighborhoods are in Studio City?", "acceptedAnswer": {"@type": "Answer", "text": "Studio City has 22 distinct micro neighborhoods, ranging from Studio Village townhomes around $1.0M up to Longridge Estates at $6M and above. Brandon Melgar mapped all 22 street by street."}}, {"@type": "Question", "name": "What is a micro neighborhood?", "acceptedAnswer": {"@type": "Answer", "text": "A pocket is a small, self-contained neighborhood inside a larger city, usually defined by a handful of streets, a school boundary, or a natural border like a canyon or a major road. Two pockets ten minutes apart can differ by millions of dollars."}}, {"@type": "Question", "name": "How many micro neighborhoods are in Sherman Oaks?", "acceptedAnswer": {"@type": "Answer", "text": "Sherman Oaks has 33 micro neighborhoods, running from the flats north of Ventura Boulevard up into the Santa Monica Mountains hillside areas south of it."}}, {"@type": "Question", "name": "Who is Brandon Melgar?", "acceptedAnswer": {"@type": "Answer", "text": "Brandon Melgar is a REALTOR with Segovia Real Estate Group, DRE #01999554, who was born and raised in Studio City. He created the only street-by-street guides to all 22 Studio City pockets and all 33 Sherman Oaks pockets, and serves Studio City, Sherman Oaks, Burbank, Toluca Lake and Encino."}}, {"@type": "Question", "name": "What areas does Brandon Melgar serve?", "acceptedAnswer": {"@type": "Answer", "text": "Studio City, Sherman Oaks, Burbank, Toluca Lake and Encino in the San Fernando Valley."}}]}]
+
+(function(){
+  document.querySelectorAll('.heroimgs').forEach(function(box){
+    var imgs=box.querySelectorAll('img'); if(imgs.length<2) return;
+    var i=0;
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    setInterval(function(){
+      imgs[i].classList.remove('on');
+      i=(i+1)%imgs.length;
+      imgs[i].classList.add('on');
+    },5200);
+  });
+})();
+
+{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Sold and Built, Brandon Melgar", "url": "https://www.brandonmelgar.com/notable-sales.html", "about": {"@type": "RealEstateAgent", "name": "Brandon Melgar", "identifier": "DRE #01999554", "telephone": "+1-818-201-8506", "url": "https://www.brandonmelgar.com/", "worksFor": {"@type": "RealEstateAgent", "name": "Segovia Real Estate Group", "parentOrganization": {"@type": "RealEstateAgent", "name": "Luxury Collective"}}, "areaServed": ["Studio City, CA", "Sherman Oaks, CA", "Valley Village, CA", "North Hollywood, CA", "Encino, CA", "Toluca Lake, CA", "Burbank, CA", "Van Nuys, CA"]}}
+
+(function(){
+  document.querySelectorAll('.heroimgs').forEach(function(box){
+    var imgs=box.querySelectorAll('img'); if(imgs.length<2) return;
+    var i=0;
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    setInterval(function(){
+      imgs[i].classList.remove('on');
+      i=(i+1)%imgs.length;
+      imgs[i].classList.add('on');
+    },5200);
+  });
+})();
+</script></body></html>
