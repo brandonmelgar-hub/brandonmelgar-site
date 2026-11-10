@@ -19,7 +19,7 @@
       '<div class="pm-head"><p class="pm-eyebrow">Free pocket map</p>'+
       '<h2>Which '+esc(data.area)+' pocket do you live in?</h2>'+
       '<p>Tap any pocket to open its guide, its history and my video on it. Or pick a name below.</p>'+
-      (withPage?'<div class="pm-legend"><span><i class="k1"></i>Full pocket guide</span><span><i class="k2"></i>Guide coming soon</span></div>':'')+
+      (withPage?'<div class="pm-legend"><span><i class="k1"></i>Full pocket guide</span><span><i class="k2"></i>Guide sent on request</span></div>':'')+
       '</div><div class="pm-body"><div class="pm-map" role="application" aria-label="Map of '+esc(data.area)+' pockets"></div>'+
       '<aside class="pm-panel" aria-live="polite"><p class="pm-kicker">'+esc(data.area)+'</p>'+
       '<h3>Pick a pocket</h3><p class="pm-empty">Tap your pocket on the map to open its guide and video.</p>'+
@@ -61,11 +61,12 @@
         [].forEach.call(chips.children,function(ch){ch.classList.toggle("on",ch.getAttribute("data-id")===id)});
         var p=o.p, h='<p class="pm-kicker">'+esc(data.area)+' pocket</p><h3>'+esc(p.name)+'</h3>';
         if(p.price) h+='<p class="pm-price">Homes here run '+esc(p.price)+'</p>';
-        h+= p.blurb?'<p class="pm-blurb">'+esc(p.blurb)+'</p>':'<p class="pm-blurb">My full guide to this pocket is coming soon. Want the real numbers now? Ask me and I will pull them for you.</p>';
+        h+= p.blurb?'<p class="pm-blurb">'+esc(p.blurb)+'</p>':'<p class="pm-blurb">I have the full rundown on '+esc(p.name)+', what homes sell for, the streets people want, and what is coming up. Tell me where to send it and I will get it to you personally.</p>';
         h+='<div class="pm-btns">';
         if(p.page) h+='<a class="pm-btn" href="'+pages+esc(p.page)+'">Read the '+esc(p.name)+' guide</a>';
         if(p.video) h+='<a class="pm-btn" href="https://www.tiktok.com/@cup.of.equity.la/video/'+esc(p.video)+'" target="_blank" rel="noopener">Watch the video</a>';
-        h+='<a class="pm-btn primary" href="'+base+'free-pocket-analysis.html?pocket='+encodeURIComponent(p.name)+'">I live here. What is my home worth?</a></div>';
+        if(!p.page) h+='<a class="pm-btn primary" href="'+base+'free-pocket-analysis.html?pocket='+encodeURIComponent(p.name+(data.area?', '+data.area:''))+'&want=guide">Send me the '+esc(p.name)+' guide</a>';
+        h+='<a class="pm-btn'+(p.page?' primary':'')+'" href="'+base+'free-pocket-analysis.html?pocket='+encodeURIComponent(p.name+(data.area?', '+data.area:''))+'">I live here. What is my home worth?</a></div>';
         h+='<p class="pm-note">Borders are approximate.</p>';
         panel.innerHTML=h;
         try{var u=new URL(location.href);u.searchParams.set("p",id);history.replaceState(null,"",u)}catch(e){}
