@@ -23,7 +23,7 @@
       '</div><div class="pm-body"><div class="pm-map" role="application" aria-label="Map of '+esc(data.area)+' pockets"></div>'+
       '<aside class="pm-panel" aria-live="polite"><p class="pm-kicker">'+esc(data.area)+'</p>'+
       '<h3>Pick a pocket</h3><p class="pm-empty">Tap your pocket on the map to open its guide and video.</p>'+
-      '<div class="pm-btns"><a class="pm-btn primary" href="'+base+'free-pocket-analysis.html">What is my home worth?</a></div></aside></div>'+
+      '<div class="pm-btns"><a class="pm-btn" href="'+base+'buyers-guide.html">I want to buy here. Free Buyer\'s Guide</a><a class="pm-btn primary" href="'+base+'free-pocket-analysis.html">What is my home worth?</a></div></aside></div>'+
       '<div class="pm-list"><h3>Every pocket on the map</h3><div class="pm-chips"></div></div>'+
       '<p class="pm-disclaim">There is no official list of pockets. Names follow the neighborhood map neighbors use on Nextdoor, and borders are approximate, so your street may sit a block either way. Not for school, tax or legal purposes.</p>';
     var mapEl=root.querySelector(".pm-map"), panel=root.querySelector(".pm-panel"), chips=root.querySelector(".pm-chips");
@@ -66,6 +66,7 @@
         if(p.page) h+='<a class="pm-btn" href="'+pages+esc(p.page)+'">Read the '+esc(p.name)+' guide</a>';
         if(p.video) h+='<a class="pm-btn" href="https://www.tiktok.com/@cup.of.equity.la/video/'+esc(p.video)+'" target="_blank" rel="noopener">Watch the video</a>';
         if(!p.page) h+='<a class="pm-btn primary" href="'+base+'free-pocket-analysis.html?pocket='+encodeURIComponent(p.name+(data.area?', '+data.area:''))+'&want=guide">Send me the '+esc(p.name)+' guide</a>';
+        h+='<a class="pm-btn" href="'+base+'buyers-guide.html?pocket='+encodeURIComponent(p.name+(data.area?', '+data.area:''))+'">I want to buy here. Free Buyer\'s Guide</a>';
         h+='<a class="pm-btn'+(p.page?' primary':'')+'" href="'+base+'free-pocket-analysis.html?pocket='+encodeURIComponent(p.name+(data.area?', '+data.area:''))+'">I live here. What is my home worth?</a></div>';
         h+='<p class="pm-note">Borders are approximate.</p>';
         panel.innerHTML=h;
