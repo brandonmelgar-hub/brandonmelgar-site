@@ -1,0 +1,11 @@
+/* shared menu styles, 11/27/26 */
+@font-face{font-family:"FA Brands";font-style:normal;font-weight:400;font-display:block;src:url(fonts/fa-brands-400.woff2) format("woff2")}
+.nav{padding:9px 32px!important;gap:20px!important}
+@media(min-width:1181px){.nav{flex-wrap:nowrap!important}.navlinks{flex-wrap:nowrap!important;gap:24px!important}.nav>.langbtn{order:9}}
+.navcta{background:#C9A96E;color:#14110E!important;padding:9px 18px;font-weight:600;letter-spacing:.1em!important;text-transform:uppercase;font-size:11.5px!important;white-space:nowrap}
+.navcta:hover{background:#DDBF86}
+.navsoc{display:flex;align-items:center;gap:16px}
+.nav .navsoc a.soc{font-family:"FA Brands";font-size:17px;line-height:1;letter-spacing:0;color:#EDE7DC;text-decoration:none}
+.nav .navsoc a.soc:hover{color:#C9A96E}
+.soc.ig::before{content:"\f16d"}.soc.tt::before{content:"\e07b"}.soc.yt::before{content:"\f167"}
+@media(max-width:1180px){.nav{gap:12px!important;padding:9px 16px!important}.nav>.langbtn{padding:6px 9px;font-size:11px}.navlinks .navcta{order:-2;align-self:stretch;text-align:center;margin-bottom:4px}.navlinks .navsoc{order:-1;gap:22px;padding:4px 0;margin-bottom:6px}.nav .navsoc a.soc{font-size:22px}}
