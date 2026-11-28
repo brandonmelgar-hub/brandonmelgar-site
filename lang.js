@@ -23,7 +23,9 @@
 
         /* ---------- home v8 (11/27/26) ---------- */
     "Your Chapter": "Tu capítulo",
-    "The Money": "El dinero",
+    "Connect": "Conecta",
+    "Connect with me": "Conecta conmigo",
+    "Buy + Sell": "Comprar + Vender",
     "The Neighborhoods": "Los vecindarios",
     "The Builds": "Las remodelaciones",
     "Local Life": "Vida local",
@@ -65,11 +67,10 @@
     "What I cover": "De qué hablo",
     "Buying and": "Comprar y",
     "owning.": "ser dueño.",
-    "The money": "El dinero",
     "The neighborhoods": "Los vecindarios",
     "The builds": "Las remodelaciones",
     "Local life": "Vida local",
-    "The money, the neighborhoods, the houses I rebuild and the local spots worth knowing. Start with whatever you are curious about.": "El dinero, los vecindarios, las casas que reconstruyo y los lugares locales que vale la pena conocer. Empieza con lo que te dé curiosidad.",
+    "Buying and selling, the neighborhoods, the houses I rebuild and the local spots worth knowing. Start with whatever you are curious about.": "Comprar y vender, los vecindarios, las casas que reconstruyo y los lugares locales que vale la pena conocer. Empieza con lo que te dé curiosidad.",
     "Buying and selling, in plain English": "Comprar y vender, explicado claro",
     "With my dad and my sister, both lenders. Down payments, pre approval, equity and Prop 19.": "Con mi papá y mi hermana, los dos prestamistas. Enganche, preaprobación, plusvalía y Prop 19.",
     "Start with the buyer's guide →": "Empieza con la guía del comprador →",
